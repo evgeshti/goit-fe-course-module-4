@@ -1,0 +1,64 @@
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Контейнер */
+.container {
+  width: 1110px;
+  margin: 0px auto;
+}
+
+/* Логотип */
+h1 {
+  color: #555252;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+}
+
+/* Первая буква логотипа */
+h1::first-letter {
+  font-size: 30px;
+  color: #1abc9c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+/* Зеленая полоса после первого заголовка */
+.f-prod-title::after {
+  content: "";
+  display: block;
+  border-bottom: 164px solid #1abc9c;
+  border-width: 7px;
+  width: 200px;
+}
+
+.nav-li {
+  display: inline-block;
+  margin-right: 0px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  color: #0f0101;
+  font-family: "Open Sans";
+}
+
+.div-nav {
+  display: inline-block;
+  margin: 0px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+}

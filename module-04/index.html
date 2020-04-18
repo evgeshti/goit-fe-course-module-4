@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -14,12 +18,12 @@
 
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <p>MART</p>
+      <nav class="nav">
+        <div class="div-nav first">
+          <h1>MART</h1>
         </div>
-        <div class="container">
-          <ul class="nav">
+        <div class="div-nav">
+          <ul>
             <li class="nav-li">home</li>
             <li class="nav-li">about us</li>
             <li class="nav-li">page</li>
@@ -31,24 +35,89 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <section>
         <article>
-          <h2>FEATURED PRODUCTS</h2>
+          <h2 class="f-prod-title">featured products</h2>
           <ul class="f-prod">
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
-            <li><img src="" title="" alt="" /></li>
+            <li>
+              <img
+                src="./img/product1.png"
+                title="blue shoes"
+                alt="blue woman shoes"
+              />
+              <!-- решил название товара и его цену оборачивать в блочный элемент для дальнейшего использования display: inline-block; -->
+              <p>blue tshirt</p>
+              <p>$26</p>
+            </li>
+            <li>
+              <img
+                src="./img/product2.png"
+                title="yellow belt"
+                alt="yellow lather belt"
+              />
+              <p>woman shirt</p>
+              <p>$31</p>
+            </li>
+            <li>
+              <img
+                src="./img/product3.png"
+                title="black male hat"
+                alt="black male hat"
+              />
+              <p>yellow tshirt</p>
+              <p>$21</p>
+            </li>
+            <li>
+              <img
+                src="./img/product4.png"
+                title="blue pure"
+                alt="opened blue purse"
+              />
+              <p>cool lingerie</p>
+              <p>$56</p>
+            </li>
+            <li>
+              <img
+                src="./img/product5.png"
+                title="black female bag"
+                alt="black female bag"
+              />
+              <p>blue tshirt</p>
+              <p>$26</p>
+            </li>
+            <li>
+              <img
+                src="./img/product6.png"
+                title="black belt"
+                alt="black belt"
+              />
+              <p>woman shirt</p>
+              <p>$31</p>
+            </li>
+            <li>
+              <img
+                src="./img/product7.png"
+                title="lather male shoes"
+                alt="lather male shoes"
+              />
+              <p>yellow tshirt</p>
+              <p>$21</p>
+            </li>
+            <li>
+              <img
+                src="./img/product8.png"
+                title="poliviolet glasses"
+                alt="poliviolet glasses"
+              />
+              <p>cool lingerie</p>
+              <p>$56</p>
+            </li>
           </ul>
         </article>
 
         <article>
-          <h2>LATEST NEWS</h2>
+          <h2>latest news</h2>
           <ul class="l-news">
             <li>
               <div>
@@ -67,6 +136,9 @@
                   officiis earum autem atque aut, beatae dolores totam quaerat
                   sint. Eum alias exercitationem tenetur consectetur ab?
                 </p>
+                <div class="button">
+                  <button type="button" class="button-read">Read more</button>
+                </div>
               </div>
             </li>
             <li>
@@ -82,6 +154,9 @@
                   officiis earum autem atque aut, beatae dolores totam quaerat
                   sint. Eum alias exercitationem tenetur consectetur ab?
                 </p>
+                <div class="button">
+                  <button type="button" class="button-read">Read more</button>
+                </div>
               </div>
             </li>
             <li>
@@ -97,6 +172,9 @@
                   officiis earum autem atque aut, beatae dolores totam quaerat
                   sint. Eum alias exercitationem tenetur consectetur ab?
                 </p>
+                <div class="button">
+                  <button type="button" class="button-read">Read more</button>
+                </div>
               </div>
             </li>
           </ul>
