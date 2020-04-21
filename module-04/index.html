@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,9 +20,9 @@
     <header>
       <nav class="nav">
         <div class="div-nav first">
-          <h1>MART</h1>
+          <h1 class="clearfx">MART</h1>
         </div>
-        <div class="div-nav">
+        <div class="div-nav second">
           <ul>
             <li class="nav-li">home</li>
             <li class="nav-li">about us</li>
@@ -35,150 +35,186 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <section>
-        <article>
-          <h2 class="f-prod-title">featured products</h2>
-          <ul class="f-prod">
-            <li>
+        <h2 class="h2-title">featured products</h2>
+        <ul class="f-prod">
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product1.png"
                 title="blue shoes"
                 alt="blue woman shoes"
               />
-              <!-- решил название товара и его цену оборачивать в блочный элемент для дальнейшего использования display: inline-block; -->
-              <p>blue tshirt</p>
-              <p>$26</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">blue tshirt</h3>
+              <p class="product-price">$26</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product2.png"
                 title="yellow belt"
                 alt="yellow lather belt"
               />
-              <p>woman shirt</p>
-              <p>$31</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">woman shirt</h3>
+              <p class="product-price">$31</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product3.png"
                 title="black male hat"
                 alt="black male hat"
               />
-              <p>yellow tshirt</p>
-              <p>$21</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">yellow tshirt</h3>
+              <p class="product-price">$21</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product4.png"
                 title="blue pure"
                 alt="opened blue purse"
               />
-              <p>cool lingerie</p>
-              <p>$56</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">cool lingerie</h3>
+              <p class="product-price">$56</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product5.png"
                 title="black female bag"
                 alt="black female bag"
               />
-              <p>blue tshirt</p>
-              <p>$26</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">blue tshirt</h3>
+              <p class="product-price">$26</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product6.png"
                 title="black belt"
                 alt="black belt"
               />
-              <p>woman shirt</p>
-              <p>$31</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">woman shirt</h3>
+              <p class="product-price">$31</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product7.png"
                 title="lather male shoes"
                 alt="lather male shoes"
               />
-              <p>yellow tshirt</p>
-              <p>$21</p>
-            </li>
-            <li>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">yellow tshirt</h3>
+              <p class="product-price">$21</p>
+            </div>
+          </li>
+
+          <li class="prod">
+            <div class="wrap-image">
               <img
                 src="./img/product8.png"
                 title="poliviolet glasses"
                 alt="poliviolet glasses"
               />
-              <p>cool lingerie</p>
-              <p>$56</p>
-            </li>
-          </ul>
-        </article>
+            </div>
+            <div class="product-line clearfx">
+              <h3 class="product">cool lingerie</h3>
+              <p class="product-price">$56</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-        <article>
-          <h2>latest news</h2>
-          <ul class="l-news">
-            <li>
-              <div>
-                <img
-                  src="./img/ipad-632394_960_720.png"
-                  title="map on the ipad"
-                  alt="map ipad"
-                />
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium, minus.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio deleniti laboriosam excepturi, ducimus laborum
-                  officiis earum autem atque aut, beatae dolores totam quaerat
-                  sint. Eum alias exercitationem tenetur consectetur ab?
-                </p>
-                <div class="button">
-                  <button type="button" class="button-read">Read more</button>
-                </div>
+      <section>
+        <h2 class="h2-title">latest news</h2>
+        <ul class="l-news clearfx">
+          <li class="li2">
+            <div class="article">
+              <img
+                src="./img/ipad-632394_960_720.png"
+                title="map on the ipad"
+                alt="map ipad"
+              />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, minus.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio deleniti laboriosam excepturi, ducimus laborum
+                officiis earum autem atque aut, beatae dolores totam quaerat
+                sint. Eum alias exercitationem tenetur consectetur ab?
+              </p>
+              <div class="button">
+                <button type="button" class="button-read">Read more</button>
               </div>
-            </li>
-            <li>
-              <div>
-                <img src="./img/slide1.png" title="two women" alt="women" />
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium, minus.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio deleniti laboriosam excepturi, ducimus laborum
-                  officiis earum autem atque aut, beatae dolores totam quaerat
-                  sint. Eum alias exercitationem tenetur consectetur ab?
-                </p>
-                <div class="button">
-                  <button type="button" class="button-read">Read more</button>
-                </div>
+            </div>
+          </li>
+          <li class="li2">
+            <div class="article">
+              <img src="./img/slide1.png" title="two women" alt="women" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, minus.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio deleniti laboriosam excepturi, ducimus laborum
+                officiis earum autem atque aut, beatae dolores totam quaerat
+                sint. Eum alias exercitationem tenetur consectetur ab?
+              </p>
+              <div class="button">
+                <button type="button" class="button-read">Read more</button>
               </div>
-            </li>
-            <li>
-              <div>
-                <img src="./img/product-img-5.png" title="bus" alt="bus" />
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium, minus.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Distinctio deleniti laboriosam excepturi, ducimus laborum
-                  officiis earum autem atque aut, beatae dolores totam quaerat
-                  sint. Eum alias exercitationem tenetur consectetur ab?
-                </p>
-                <div class="button">
-                  <button type="button" class="button-read">Read more</button>
-                </div>
+            </div>
+          </li>
+          <li class="li2">
+            <div class="article">
+              <img src="./img/product-img-5.png" title="bus" alt="bus" />
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, minus.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio deleniti laboriosam excepturi, ducimus laborum
+                officiis earum autem atque aut, beatae dolores totam quaerat
+                sint. Eum alias exercitationem tenetur consectetur ab?
+              </p>
+              <div class="button">
+                <button type="button" class="button-read">Read more</button>
               </div>
-            </li>
-          </ul>
-        </article>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

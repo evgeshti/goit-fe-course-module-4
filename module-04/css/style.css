@@ -4,14 +4,21 @@ body {
   margin: 0;
 }
 
-/* Контейнер */
+.clearfx::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Container */
 .container {
   width: 1110px;
   margin: 0px auto;
 }
 
-/* Логотип */
+/* Logo */
 h1 {
+  float: left;
   color: #555252;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -19,9 +26,10 @@ h1 {
   line-height: 32px;
   text-transform: uppercase;
   letter-spacing: -0.6px;
+  margin: 0px;
 }
 
-/* Первая буква логотипа */
+/* Logo first letter */
 h1::first-letter {
   font-size: 30px;
   color: #1abc9c;
@@ -30,16 +38,13 @@ h1::first-letter {
   letter-spacing: -0.6px;
 }
 
-/* Зеленая полоса после первого заголовка */
-.f-prod-title::after {
-  content: "";
-  display: block;
-  border-bottom: 164px solid #1abc9c;
-  border-width: 7px;
-  width: 200px;
+/* Navigation */
+.nav-li {
+  margin: 0px;
 }
 
 .nav-li {
+  float: right;
   display: inline-block;
   margin-right: 0px;
   text-transform: uppercase;
@@ -56,9 +61,137 @@ h1::first-letter {
   margin: 0px;
 }
 
+/* Featured product */
+h2 {
+  margin: 0px;
+  color: #515151;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: -0.96px;
+  font-family: "Roboto - Black", sans-serif;
+}
+
+.wrap-image {
+  background-color: #e9f0fd;
+  width: 255px;
+  height: 280px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.h2-title::after {
+  content: "";
+  display: block;
+  border-bottom: 164px solid #1abc9c;
+  border-width: 7px;
+  width: 200px;
+}
+
+/* Featured products ul */
+li {
+  list-style-type: none;
+}
+
+.product-line {
+  background-color: #323232;
+  color: #fff;
+}
+
+.product {
+  margin: 0px;
+  float: left;
+  display: block;
+  /* height: 40px;
+  width: 255px; */
+
+  color: #ffffff;
+  font-family: "Roboto - Black", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
+/* убрать схлопывание */
+/* прочитать про клирфикс */
+/* прописать ргба с 05 */
+
+.product-price {
+  margin: 0px;
+  float: right;
+  /* background-color: #ffffff; */
+
+  color: #ffffff;
+  font-family: "Roboto - Black", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
+.prod {
+  margin: 0px;
+  width: 255px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.prod:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+/* Section 2 */
+
+.article {
+  width: 255px;
+  height: 280px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* .li2 {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.li2:nth-child(n + 3) {
+  margin-right: 0;
+} */
+
+.li2 {
+  float: left;
+  padding: 0px;
+}
+
+.l-news {
+  padding: 0px;
+}
+
 .button {
   cursor: pointer;
 }
 
+.button-read {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 18px 44px 20px 42px;
+  background-color: #4ec6ab;
+
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+}
+
 .button:hover {
 }
+
+/* вопросы */
+
+/* нужна метафора для контейнера */
+/* как запомнить что такое элемент? */
+/* border-box what the fuck? */
