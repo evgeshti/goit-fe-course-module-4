@@ -4,6 +4,21 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li,
+ul,
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
 .clearfx::after {
   content: "";
   display: table;
@@ -18,7 +33,6 @@ body {
 
 /* Logo */
 h1 {
-  float: left;
   color: #555252;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -26,10 +40,36 @@ h1 {
   line-height: 32px;
   text-transform: uppercase;
   letter-spacing: -0.6px;
-  margin: 0px;
 }
 
-/* Logo first letter */
+.nav_ul {
+  padding: 6px 0px;
+
+  color: #0f0101;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-li {
+  color: #0f0101;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-li:hover {
+  color: #1abc9c;
+}
+
+.nav {
+  padding-top: 38px;
+}
+
 h1::first-letter {
   font-size: 30px;
   color: #1abc9c;
@@ -38,15 +78,14 @@ h1::first-letter {
   letter-spacing: -0.6px;
 }
 
-/* Navigation */
-.nav-li {
-  margin: 0px;
+.logo {
+  float: left;
 }
 
+/* Navigation */
 .nav-li {
-  float: right;
-  display: inline-block;
-  margin-right: 0px;
+  float: left;
+  margin-right: 22px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -57,18 +96,24 @@ h1::first-letter {
 }
 
 .div-nav {
-  display: inline-block;
   margin: 0px;
+  float: right;
 }
 
 /* Featured product */
 h2 {
-  margin: 0px;
+  margin-top: 110px;
+  margin-bottom: 130px;
   color: #515151;
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: -0.96px;
-  font-family: "Roboto - Black", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+}
+
+.f-prod {
+  padding: 0px;
 }
 
 .wrap-image {
@@ -80,12 +125,19 @@ h2 {
   vertical-align: middle;
 }
 
+.h2-title {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
 .h2-title::after {
   content: "";
   display: block;
   border-bottom: 164px solid #1abc9c;
   border-width: 7px;
   width: 200px;
+  margin: auto;
+  padding-top: 32px;
 }
 
 /* Featured products ul */
@@ -93,75 +145,63 @@ li {
   list-style-type: none;
 }
 
+h3 {
+  margin: 0px;
+}
+
 .product-line {
   background-color: #323232;
   color: #fff;
-}
-
-.product {
-  margin: 0px;
-  float: left;
-  display: block;
-  /* height: 40px;
-  width: 255px; */
-
-  color: #ffffff;
-  font-family: "Roboto - Black", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: -0.36px;
-}
-
-/* убрать схлопывание */
-/* прочитать про клирфикс */
-/* прописать ргба с 05 */
-
-.product-price {
-  margin: 0px;
-  float: right;
-  /* background-color: #ffffff; */
-
-  color: #ffffff;
-  font-family: "Roboto - Black", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: -0.36px;
+  height: 40px;
 }
 
 .prod {
-  margin: 0px;
-  width: 255px;
-  display: inline-block;
+  float: left;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.prod:nth-child(4n + 4) {
-  margin-right: 0;
+.prod:nth-child(4n) {
+  margin-right: 0px;
 }
 
-/* Section 2 */
-
-.article {
-  width: 255px;
-  height: 280px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-}
-
-/* .li2 {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.li2:nth-child(n + 3) {
-  margin-right: 0;
-} */
-
-.li2 {
+.product {
   float: left;
+  padding: 12px 0px 12px 14px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
+.prod:hover .product-line {
+  background-color: #1abc9c;
+}
+
+.product-price {
+  float: right;
+  margin: 0px;
+  color: #ffffff;
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
+.li_news {
+  float: left;
+  width: 350px;
+  margin-right: 30px;
   padding: 0px;
+}
+
+.li_news:nth-child(3) {
+  margin-right: 0px;
 }
 
 .l-news {
@@ -170,28 +210,66 @@ li {
 
 .button {
   cursor: pointer;
+  padding-bottom: 82px;
+}
+
+.p_news {
+  margin-bottom: 16px;
 }
 
 .button-read {
-  margin: 0px;
+  display: inline-block;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 18px 44px 20px 42px;
   background-color: #4ec6ab;
 
   color: #ffffff;
-  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   letter-spacing: -0.32px;
+
+  border-radius: 5px;
 }
 
-.button:hover {
+.news_title:after {
+  content: "";
+  display: block;
+  border-bottom: 136px solid #1abc9c;
+  border-width: 4px;
+  width: 200px;
+  margin: auto;
+  float: left;
+  padding-top: 10px;
+}
+
+.news_title {
+  margin-bottom: 42px;
+}
+.news_title {
+  color: #555252;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.p_news {
+  color: #555252;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.button-read:hover {
+  background-color: #fff;
+  color: #1abc9c;
+  border: 1px solid #323232;
 }
 
 /* вопросы */
 
-/* нужна метафора для контейнера */
-/* как запомнить что такое элемент? */
-/* border-box what the fuck? */
+/* запомнить inline-block и block */
+/* важно указывать тексту font-weight */
